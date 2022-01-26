@@ -1,7 +1,6 @@
 import React from 'react';
 import { QueryClientProvider, QueryClient } from 'react-query';
 import { ReactQueryDevtools } from "react-query/devtools";
-import StoriesLayout from './layouts/Stories';
 import RootRouter from './config/RootRouter.routes';
 
 
@@ -13,9 +12,7 @@ const App = () => {
     // Provide the client to your App
     <QueryClientProvider client={queryClient}>
       <main>
-        <StoriesLayout>
-          <RootRouter />
-        </StoriesLayout>
+        <RootRouter />
       </main>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
