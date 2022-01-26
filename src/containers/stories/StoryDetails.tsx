@@ -17,7 +17,7 @@ const StoryDetails: React.FC = () => {
       {data ? (
         <>
           <Header>
-            <div className='w-full flex justify-center py-12'>
+            <div className='w-full flex justify-center py-8'>
               <div className='text-center sm:w-11/12 lg:w-1/2'>
                 <p className='mb-8 text-blue-800'>
                   {data.date_gmt ? new Intl.DateTimeFormat('en-GB', { dateStyle: 'full' }).format(new Date(data.date_gmt)) : ''}
@@ -27,7 +27,7 @@ const StoryDetails: React.FC = () => {
             </div>
           </Header>
           
-          <div className="inline-grid grid-cols-1 items-center justify-items-center">
+          <div className="inline-grid grid-cols-1 items-center justify-items-center mt-8">
             <div className='sm:w-5/6 lg:w-4/6'>
               <img src={data.jetpack_featured_media_url} alt="avatar" className='max-w-full mb-16' />
               {/* excerpt */}
