@@ -20,7 +20,7 @@ const StoryDetails: React.FC = () => {
               <p className='mb-12'>
                 {data.date_gmt ? new Intl.DateTimeFormat('en-GB', { dateStyle: 'full'}).format(new Date(data.date_gmt)) : ''}
               </p>
-              <h1 className="text-3xl font-bold mb-16 text-center">{data.title.rendered}</h1>
+              <h1 className="text-3xl font-bold mb-16 text-center"dangerouslySetInnerHTML={{ __html: data.title.rendered }}></h1>
             </div>
 
             <img src={data.jetpack_featured_media_url} alt="avatar" className='max-w-full mb-16' />
