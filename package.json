@@ -56,9 +56,11 @@
       "!src/**/config/**/*.tsx",
       "!src/**/__test__/**/*.tsx",
       "!src/**/layouts/**/*.tsx",
+      "!src/**/models/**/*.tsx",
       "!src/**/index.tsx",
       "!src/**/App.tsx",
-      "!src/**/reportWebVitals.ts"
+      "!src/**/reportWebVitals.ts",
+      "!src/**/react-app-env.d.ts"
     ]
   }
 }
